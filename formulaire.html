@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+<style>
+
+input:invalid {
+  background: hsla(0, 90%, 70%, 1);
+}
+
+input:valid {
+  background: hsla(100, 90%, 70%, 1);
+}
+
+body {
+  padding: 3em;
+}
+fieldset {
+ border: 0;   
+}
+input {
+  padding: 0.25em 0;
+  margin-bottom: 0.75em;
+}
+ 
+</style>
+
+
+
+</head>
+<body>
+<h2>Formulaire de contact</h2>
+
+<form method="post" action="form.php">
+    
+  <fieldset>
+  <label for="fname">Prénom:</label><br>
+  <input type="text" id="fname" name="fname" size="30" maxlength="20" placeholder="votre prénom" required><br>
+  </fieldset>
+  
+  <fieldset>
+  <label for="lname">Nom:</label><br>
+  <input type="text" id="lname" name="lname" size="30" maxlength="20"  placeholder="votre nom" required><br>
+  </fieldset>
+  
+<fieldset>
+  <label for="emailRequired">Email (required):</label><br>
+  <input type="email" name="email"  placeholder="votre email" required>
+</fieldset>
+
+<fieldset>
+<textarea id="w3review" name="message" rows="10" cols="100"  maxlength="500" required placeholder="Votre message ici (500 caractères max.)"></textarea>
+  </fieldset>
+  
+  <input type="submit" value=" ENVOYER ">
+  
+  
+</form>
+ 
+</body>
+</html>
